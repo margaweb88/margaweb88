@@ -1,3 +1,131 @@
-img {
-    width: 900px;
-}
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Quicksand', sans-serif;
+      }
+      
+      section {
+          height: 100vh;
+          position: sticky;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .text {
+          color: black;
+      }
+      
+      a {
+          text-decoration: none;
+          color: black;
+      }
+      
+      li {
+          list-style: none;
+      }
+      
+      .main {
+          background-color: #C9A8EC;
+      }
+      
+      .quiensoy {
+          background-color: #F9DBAA;
+      }
+      
+      .quepuedohacer {
+          background-color: #7F90EA;
+      }
+      
+      .skills {
+          background-color: #EBBEB1;
+      }
+      
+      .trabajos {
+          background-color: #FFE8DA;
+      }
+      
+      .contacto {
+          background-color: #CEA8E9;
+      }
+      
+      .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          height: 95vh;
+          padding: 3rem calc( (100vw - 1300px) / 2);
+      }
+      
+      .columna-izquierda {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 0rem 2rem;
+      }
+      
+      .columna-izquierda h1 {
+          margin-bottom: 1rem;
+          font-size: 2rem;
+          font-style: normal;
+      }
+      
+      .columna-izquierda p {
+          margin-bottom: 1rem;
+          font-size: 1.5rem;
+          line-height: 1.1;
+      }
+      
+      .contactame {
+          padding: 1rem 3rem;
+          font-size: 1rem;
+          border: 1px solid black;
+          background: #C9A8EC;
+          color: black;
+          border-radius: 50px;
+      }
+      
+      .cv {
+          padding: 1rem 3rem;
+          font-size: 1rem;
+          border: 1px solid black;
+          background: #F9DBAA;
+          color: black;
+          border-radius: 50px;
+      }
+      
+      .logo {
+          width: 500px;
+      }
+      
+      .image {
+          height: 100%;
+          width: 100%;
+          max-width: 800px;
+          max-height: 700px;
+      }
+      
+      .icon {
+          width: 30px;
+          vertical-align: middle;
+          padding-right: 4px;
+      }
+      
+      .trabajo {
+          width: 300px;
+      }
+      
+      .zoom {
+          width: 500px;
+          transition: transform .2s;
+      }
+      
+      .zoom:hover {
+          transform: scale(1.5);
+      }
+      
+      @media screen and (max-width:768px) {
+          .container {
+              grid-template-columns: 1fr;
+          }
+      }
