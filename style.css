@@ -128,4 +128,16 @@
           .container {
               grid-template-columns: 1fr;
           }
+          .logo {
+              width: 350px;
+          }
+          .columna-izquierda h1 {
+              font-size: 1.5rem;
+          }
+          .trabajo {
+              width: 200px;
+          }
+          .zoom {
+              width: 360px;
+          }
       }
